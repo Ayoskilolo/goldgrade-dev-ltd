@@ -31,11 +31,18 @@
   height: auto;
   font-family: Neurial;
   color: white;
-  background-color: #681c26;
 }
 
 .footer {
   height: 90vh;
   background-color: #681c26;
+}
+
+body {
+  background-color: #681c26;
+}
+
+p {
+  font-family: NeurialLight;
 }
 </style>
