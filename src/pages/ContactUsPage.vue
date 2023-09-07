@@ -90,9 +90,9 @@
       <div class="col-8 location-slide">
         <q-img />
         <div>
-          <p>Ikeja Lagos</p>
+          <p>Ikeja, Lagos</p>
           <p>GoldGrade Development Limited</p>
-          <p>34 Ijaiye Road Ogba</p>
+          <p>34 Ijaiye Road, Ogba</p>
           <p><q-icon name="call" /> 234 805 518 0613</p>
           <div>
             <q-icon name="location" />

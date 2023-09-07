@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router';
-import IndexPage from 'src/pages/IndexPage.vue';
+import HomePage from 'src/pages/HomePage.vue';
 import ContactUsPage from 'src/pages/ContactUsPage.vue';
 
 const routes: RouteRecordRaw[] = [
@@ -7,7 +7,7 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', name: 'IndexPage', component: IndexPage },
+      { path: 'home', name: 'HomePage', component: HomePage },
       { path: 'contact-us', name: 'ContactUsPage', component: ContactUsPage },
     ],
   },
