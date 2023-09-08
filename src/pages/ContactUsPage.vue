@@ -122,7 +122,7 @@ const message = ref('');
 
 .hero-text {
   padding: 5% 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #c19f62;
 }
 
 #hero {

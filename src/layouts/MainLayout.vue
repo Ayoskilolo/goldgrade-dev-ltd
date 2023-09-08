@@ -4,7 +4,7 @@
       <q-tabs no-caps class="text-white">
         <q-route-tab :to="{ name: 'HomePage' }" exact replace label="HOME" />
         <q-route-tab label="ABOUT US" />
-        <q-route-tab label="CLIENTS" />
+        <q-route-tab :to="{ name: 'ClientsPage' }" label="CLIENTS" />
         <q-route-tab :to="{ name: 'ContactUsPage' }" label="CONTACT US" />
         <q-route-tab label="BLOG" />
       </q-tabs>
@@ -30,11 +30,16 @@
           </div>
           <div class="col-6 footer-text">
             <p>Goldgrade Dev Ltd. ®</p>
-            <div>
-              <p>Telephone</p>
-              <p></p>
+            <p class="q-pt-lg">34 Ijaiye Road, <br />Ogba Ikeja, Lagos</p>
+
+            <div class="q-pt-lg">
+              <p>
+                Telephone: <br />
+                234 805 518 0613
+              </p>
             </div>
-            <div>
+
+            <div class="q-pt-lg">
               <p>E-mail</p>
               <p></p>
             </div>
@@ -65,6 +70,7 @@ const footerLinkItems = ['Home', 'About Us', 'Clients', 'Contact Us', 'Blog'];
 
 .footer {
   height: 90vh;
+  border-top: #c19f62 1px solid;
   background-color: #681c26;
 }
 
