@@ -26,21 +26,12 @@
             <div class="customer">
               <q-img
                 :no-spinner="true"
-                src="/swipha-customer.jpg"
+                src="/swipha-customer-removebg.png"
                 img-class="cus-img"
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <p>swipha</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
+              <span>SWIPHA</span>
             </div>
             <div class="customer">
               <q-img
@@ -52,15 +43,6 @@
                 style="width: 100%; height: auto; max-height: 150px"
               />
               <p>FMN</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
             </div>
             <div class="customer">
               <q-img
@@ -71,15 +53,6 @@
                 style="width: 100%; height: auto; max-height: 150px"
               />
               <p>Polaris Bank</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
             </div>
             <div class="customer">
               <q-img
@@ -90,15 +63,6 @@
                 style="width: 100%; height: auto; max-height: 150px"
               />
               <p>County Choice Farms</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
             </div>
             <div class="customer">
               <q-img
@@ -109,15 +73,6 @@
                 style="width: 100%; height: auto; max-height: 150px"
               />
               <p>Kimberly Clark</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
             </div>
             <div class="customer">
               <q-img
@@ -128,15 +83,6 @@
                 style="width: 100%; height: auto; max-height: 150px"
               />
               <p>Lagos IRS</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
             </div>
             <div class="customer">
               <q-img
@@ -147,15 +93,6 @@
                 style="width: 100%; height: auto; max-height: 150px"
               />
               <p>Harvestfield Industries</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
             </div>
             <div class="customer">
               <q-img
@@ -171,15 +108,6 @@
                 "
               />
               <p>Saro Lifecare</p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Sapiente aspernatur asperiores sunt, tempore neque labore
-                nesciunt quas facilis rem reprehenderit similique nostrum
-                repudiandae temporibus impedit nam, mollitia deleniti ut
-                inventore. Enim error asperiores, aspernatur quisquam voluptas
-                at recusandae autem distinctio earum et nam laboriosam
-                architecto tenetur dolores veniam dicta quae.
-              </p>
             </div>
           </div>
         </section>
@@ -188,7 +116,7 @@
   </q-page>
 </template>
 
-<style>
+<style scoped>
 .hero-text {
   padding: 2%;
   color: #c19f62;
@@ -202,6 +130,26 @@
   /* padding: 5rem; */
   width: 90%;
   /* background-color: green; */
+}
+
+.customer {
+  position: relative;
+  overflow: hidden;
+  font-size: 30px;
+  text-align: center;
+  transition: 1s;
+}
+
+.customer img {
+  max-width: 100%;
+  transition: all 0.2s;
+  display: block;
+  width: 100%;
+  transform: scale(1);
+}
+
+.customer:hover img {
+  transform: scale(1.2);
 }
 
 .customer-grid {
@@ -221,19 +169,19 @@
 .grid > .customer {
   min-height: 300px;
   color: #c19f62;
-  border: 1px solid #c19f62;
+  /* border: 1px solid #c19f62; */
   /* background-color: #fff; */
 }
 .customer > p {
   padding: 4%;
 }
+
 /* .cus-img {
-  border-bottom: 1px solid #c19f62;
 } */
 
 .customer:hover {
   color: #681c26;
   background-color: #fff;
-  border: 2px solid #c19f62;
+  /* border: 2px solid #c19f62; */
 }
 </style>
