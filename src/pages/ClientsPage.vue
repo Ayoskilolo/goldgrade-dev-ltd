@@ -156,7 +156,7 @@
   width: 100%;
   /* background-color: pink; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 20px;
   row-gap: 15px;
 }
