@@ -3,7 +3,7 @@
     <section class="contact-form row">
       <div class="col-md-8">
         <div class="hero-text col-8">
-          <p id="hero">Contact Us</p>
+          <h2 id="hero">Contact Us</h2>
           <p>
             Thank you for reaching out. We’ll make sure that our team receives
             your message!

@@ -3,7 +3,7 @@
     <q-header reveal class="header">
       <q-tabs no-caps class="text-white">
         <q-route-tab :to="{ name: 'HomePage' }" exact replace label="HOME" />
-        <q-route-tab label="ABOUT US" />
+        <q-route-tab :to="{ name: 'AboutUsPage' }" label="ABOUT US" />
         <q-route-tab :to="{ name: 'ClientsPage' }" label="CLIENTS" />
         <q-route-tab :to="{ name: 'ContactUsPage' }" label="CONTACT US" />
         <q-route-tab label="BLOG" />
@@ -40,8 +40,10 @@
             </div>
 
             <div class="q-pt-lg">
-              <p>E-mail</p>
-              <p></p>
+              <p>
+                E-mail <br />
+                enquires@goldgradedevelopment.com
+              </p>
             </div>
           </div>
         </div>
