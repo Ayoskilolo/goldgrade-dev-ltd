@@ -116,6 +116,9 @@
   padding: 2%;
   color: #c19f62;
 }
+.hero-text > p {
+  font-size: 1.3em;
+}
 .space {
   display: flex;
   align-items: center;
