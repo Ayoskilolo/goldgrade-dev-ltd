@@ -26,43 +26,23 @@
             <div class="customer">
               <q-img
                 :no-spinner="true"
-                src="/swipha-customer-removebg.png"
+                src="/swipha-customer.png"
                 img-class="cus-img"
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
               <span>SWIPHA</span>
             </div>
+
             <div class="customer">
               <q-img
-                :ratio="16 / 9"
                 :no-spinner="true"
-                src="/fmn-customer.png"
+                src="/county-customer.png"
                 img-class="cus-img"
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <p>FMN</p>
-            </div>
-            <div class="customer">
-              <q-img
-                :no-spinner="true"
-                src="/polaris-customer.png"
-                img-class="cus-img"
-                fit="contain"
-                style="width: 100%; height: auto; max-height: 150px"
-              />
-              <p>Polaris Bank</p>
-            </div>
-            <div class="customer">
-              <q-img
-                :no-spinner="true"
-                src="/county-customer.jpg"
-                img-class="cus-img"
-                fit="contain"
-                style="width: 100%; height: auto; max-height: 150px"
-              />
-              <p>County Choice Farms</p>
+              <span>County Choice Farms</span>
             </div>
             <div class="customer">
               <q-img
@@ -72,17 +52,17 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <p>Kimberly Clark</p>
+              <span>Kimberly Clark</span>
             </div>
             <div class="customer">
               <q-img
                 :no-spinner="true"
-                src="/lirs-customer.jpg"
+                src="/lirs-customer.png"
                 img-class="cus-img"
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <p>Lagos IRS</p>
+              <span>Lagos IRS</span>
             </div>
             <div class="customer">
               <q-img
@@ -92,7 +72,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <p>Harvestfield Industries</p>
+              <span>Harvestfield Industries</span>
             </div>
             <div class="customer">
               <q-img
@@ -100,14 +80,29 @@
                 src="/saro-customer.png"
                 img-class="cus-img"
                 fit="contain"
-                style="
-                  width: 100%;
-                  height: auto;
-                  max-height: 150px;
-                  background-color: #fff;
-                "
+                style="width: 100%; height: auto; max-height: 150px"
               />
-              <p>Saro Lifecare</p>
+              <span>Saro Lifecare</span>
+            </div>
+            <div class="customer">
+              <q-img
+                :no-spinner="true"
+                src="/fmn-customer.png"
+                img-class="cus-img"
+                fit="contain"
+                style="width: 100%; height: auto; max-height: 150px"
+              />
+              <span>FMN</span>
+            </div>
+            <div class="customer">
+              <q-img
+                :no-spinner="true"
+                src="/polaris-customer.png"
+                img-class="cus-img"
+                fit="contain"
+                style="width: 100%; height: auto; max-height: 150px"
+              />
+              <span>Polaris Bank</span>
             </div>
           </div>
         </section>
@@ -137,18 +132,18 @@
   overflow: hidden;
   font-size: 30px;
   text-align: center;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .customer img {
   max-width: 100%;
-  transition: all 0.2s;
+  /* transition: all 0.2s; */
   display: block;
   width: 100%;
-  transform: scale(1);
+  /* transform: scale(1); */
 }
 
-.customer:hover img {
+.customer img:hover {
   transform: scale(1.2);
 }
 
@@ -176,12 +171,10 @@
   padding: 4%;
 }
 
-/* .cus-img {
-} */
-
 .customer:hover {
   color: #681c26;
   background-color: #fff;
+  transform: scale(1.1);
   /* border: 2px solid #c19f62; */
 }
 </style>
