@@ -3,7 +3,7 @@
     <div class="space">
       <div class="cont">
         <section class="hero-text">
-          <h4>OUR CLIENTS</h4>
+          <span class="hero">Our Clients</span>
           <p>
             At Goldgrade, we're proud of our diverse client base, trusting us to
             boost their performance and success. We serve organizations of all
@@ -31,7 +31,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>SWIPHA</span>
+              <!-- <span>SWIPHA</span> -->
             </div>
 
             <div class="customer">
@@ -42,7 +42,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>County Choice Farms</span>
+              <!-- <span>County Choice Farms</span> -->
             </div>
             <div class="customer">
               <q-img
@@ -52,7 +52,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>Kimberly Clark</span>
+              <!-- <span>Kimberly Clark</span> -->
             </div>
             <div class="customer">
               <q-img
@@ -62,7 +62,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>Lagos IRS</span>
+              <!-- <span>Lagos IRS</span> -->
             </div>
             <div class="customer">
               <q-img
@@ -72,7 +72,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>Harvestfield Industries</span>
+              <!-- <span>Harvestfield Industries</span> -->
             </div>
             <div class="customer">
               <q-img
@@ -82,7 +82,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>Saro Lifecare</span>
+              <!-- <span>Saro Lifecare</span> -->
             </div>
             <div class="customer">
               <q-img
@@ -92,7 +92,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>FMN</span>
+              <!-- <span>FMN</span> -->
             </div>
             <div class="customer">
               <q-img
@@ -102,7 +102,7 @@
                 fit="contain"
                 style="width: 100%; height: auto; max-height: 150px"
               />
-              <span>Polaris Bank</span>
+              <!-- <span>Polaris Bank</span> -->
             </div>
           </div>
         </section>
@@ -112,9 +112,19 @@
 </template>
 
 <style scoped>
+.hero {
+  padding: 0;
+  display: flex;
+  height: 20vh;
+  color: white;
+  align-items: center;
+  font-size: calc(70px + 0.390625vw);
+  font-family: Neurial;
+}
+
 .hero-text {
   padding: 2%;
-  color: #c19f62;
+  color: white;
 }
 .hero-text > p {
   font-size: 1.3em;
@@ -161,11 +171,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 20px;
-  row-gap: 15px;
+  row-gap: 50px;
 }
 
 .grid > .customer {
-  min-height: 300px;
+  min-height: 100px;
   color: #c19f62;
   /* border: 1px solid #c19f62; */
   /* background-color: #fff; */
@@ -176,7 +186,6 @@
 
 .customer:hover {
   color: #681c26;
-  background-color: #fff;
   transform: scale(1.1);
   /* border: 2px solid #c19f62; */
 }

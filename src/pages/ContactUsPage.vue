@@ -19,6 +19,7 @@
                 v-model="clientName"
                 color="white"
                 class="input"
+                :input-style="{ color: 'white', opacity: 1 }"
                 placeholder="Theophilus Ade-ojo"
               />
             </div>
@@ -28,7 +29,9 @@
                 square
                 outlined
                 v-model="clientEmail"
+                class="input"
                 color="white"
+                :input-style="{ color: 'white', opacity: 1 }"
                 placeholder="theophilus@email.com"
               />
             </div>
@@ -38,7 +41,9 @@
             <q-input
               square
               outlined
+              :input-style="{ color: 'white', opacity: 1 }"
               v-model="clientEmail"
+              class="input"
               color="white"
               placeholder="+X XXX XXX XXX"
             />
@@ -49,19 +54,22 @@
             <q-select
               square
               outlined
+              :input-style="{ color: 'white', opacity: 1 }"
               v-model="messageTopicSelected"
               color="white"
+              class="input"
               :options="messageTopic"
             />
           </div>
-
           <div class="col q-pb-lg">
             <p class="title">Your Message</p>
             <q-input
               square
               outlined
               type="textarea"
+              class="input"
               v-model="message"
+              :input-style="{ color: 'white', opacity: 1 }"
               color="white"
             />
           </div>
@@ -88,7 +96,15 @@
         OUR OFFICE
       </div>
       <div class="col-8 location-slide">
-        <q-img />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.172307922739!2d3.3332006000000005!3d6.625508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91641b3182c7%3A0xab52d4406f81671a!2s34%20Ijaiye%20Rd%2C%20beside%20Stanbic%20Ibtc%20Bank%2C%20Ogba%20102212%2C%20Lagos!5e0!3m2!1sen!2sng!4v1697143814281!5m2!1sen!2sng"
+          width="400"
+          height="360"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
         <div>
           <p>Ikeja, Lagos</p>
           <p>GoldGrade Development Limited</p>
@@ -137,6 +153,16 @@ const message = ref('');
 
 .form {
   padding: 2rem 0;
+  color: white;
+}
+
+.input {
+  color: white;
+  border: 1px solid white;
+}
+
+.input::placeholder {
+  color: white;
 }
 
 .title {
@@ -153,5 +179,6 @@ const message = ref('');
 .location-slide {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 </style>

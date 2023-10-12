@@ -19,14 +19,14 @@
       </div>
       <div class="row" style="display: flex; align-items: end">
         <div
-          class="offset-md-3 services row"
+          class="offset-md-3 services row q-pt-lg"
           style="border-top: 1px solid black; width: 100%; font-size: 20px"
         >
           <div class="col">
-            <p>Brand Strategy</p>
             <p>Business Process Development</p>
-            <p>Field Marketing Services</p>
             <p>Employee indentureships</p>
+            <p>Field Marketing Services</p>
+            <p>Brand Strategy</p>
           </div>
           <div class="col">
             <p>Marketing and Sales Assessments</p>
@@ -109,7 +109,7 @@ onBeforeUnmount(() => {
 });
 </script>
 
-<style>
+<style scoped>
 .section1 {
   padding: 2rem 8%;
   height: 46vh;
@@ -143,8 +143,32 @@ onBeforeUnmount(() => {
 }
 
 .services p {
-  padding: 10px;
-  color: #c29e61;
+  margin: 0;
+  margin-left: 0px;
+  padding: 1rem;
+  color: #681c26;
+  cursor: pointer;
+  position: relative;
+  width: max-content;
+}
+
+.services p:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.4rem;
+  bottom: 0;
+  left: 0;
+  background-color: #c29e61;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  border-radius: 1px;
+}
+
+.services p:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .values {
