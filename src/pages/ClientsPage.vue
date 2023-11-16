@@ -125,6 +125,7 @@
 .hero-text {
   padding: 2%;
   color: white;
+  text-align: justify;
 }
 .hero-text > p {
   font-size: 1.3em;
@@ -188,5 +189,15 @@
   color: #681c26;
   transform: scale(1.1);
   /* border: 2px solid #c19f62; */
+}
+
+@media only screen and (max-width: 848px) {
+  .hero {
+    font-size: calc(50px);
+  }
+
+  .customer-grid {
+    margin-bottom: 4rem;
+  }
 }
 </style>

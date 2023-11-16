@@ -1,8 +1,8 @@
 <template>
   <q-page class="home section">
     <section class="section1 row self-center">
-      <div class="col-md-8 offset-md-2">
-        <h2>Enhancing performance</h2>
+      <div class="col-md-10 offset-md-1 col-sm-12 col-xs-12">
+        <h2 class="hero">Enhancing performance</h2>
 
         <div style="border-top: 1px solid #c19f62; font-size: 20px">
           <p>
@@ -22,31 +22,33 @@
           class="offset-md-3 services row q-pt-lg"
           style="border-top: 1px solid black; width: 100%; font-size: 20px"
         >
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <p>Business Process Development</p>
             <p>Employee indentureships</p>
             <p>Field Marketing Services</p>
             <p>Brand Strategy</p>
           </div>
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <p>Marketing and Sales Assessments</p>
           </div>
         </div>
       </div>
     </section>
     <section class="values">
-      <div class="row" style="width: 30%">
-        <span>Our Values</span>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.""
-        </p>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <span>Our Values</span>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.""
+          </p>
+        </div>
       </div>
       <q-linear-progress :value="progress" style="color: #c29e61" />
       <div class="row justify-between">
-        <div class="col-3">
+        <div class="col-md-3 col-sm-12">
           <span>A Value</span>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,7 +57,7 @@
             aliquip ex ea commodo consequat.""
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-md-3 col-sm-12">
           <span>A Value</span>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -64,7 +66,7 @@
             aliquip ex ea commodo consequat.""
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-md-3 col-sm-12">
           <span>A Value</span>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -125,8 +127,8 @@ onBeforeUnmount(() => {
 }
 
 .headers {
-  height: 50%;
-  width: 30%;
+  height: 60%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -172,7 +174,7 @@ onBeforeUnmount(() => {
 }
 
 .values {
-  padding: 7rem 8%;
+  padding: 4rem 8%;
   background-color: #681c26;
   font-size: 40px;
   height: 80vh;
@@ -189,5 +191,41 @@ onBeforeUnmount(() => {
 
 .values p {
   font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .headers {
+    width: 60%;
+  }
+
+  .values {
+    height: 85vh;
+  }
+
+  .values .row {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headers {
+    width: 80%;
+  }
+
+  .values {
+    font-size: 30px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero {
+    font-size: calc(50px);
+    padding-right: 0;
+  }
+
+  .headers {
+    width: 100%;
+  }
 }
 </style>

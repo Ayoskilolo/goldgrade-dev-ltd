@@ -15,14 +15,14 @@
     </q-page-container>
 
     <q-footer class="footer row">
-      <div class="col-3 icon items-center">
+      <div class="col-md-3 col-sm-12 col-xs-12 icon items-center">
         <q-img src="/goldgrade.png" spinner-color="white" width="100px" />
         <span> Gold<span style="color: #c19f62">Grade</span></span>
         <span>Development Limited</span>
       </div>
-      <div class="col-9 footer-left">
+      <div class="col-md-9 col-sm-12 col-xs-12 footer-left">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6 col-sm-12 links">
             <p
               v-for="item in footerLinkItems"
               :key="item"
@@ -31,23 +31,25 @@
               {{ item }}
             </p>
           </div>
-          <div class="col-6 footer-text">
+          <div class="col-md-6 col-sm-12 col-xs-12 footer-text">
             <p>Goldgrade Dev Ltd. ®</p>
-            <p class="q-pt-lg">34 Ijaiye Road, <br />Ogba Ikeja, Lagos</p>
+            <p>34 Ijaiye Road, <br />Ogba Ikeja, Lagos</p>
 
-            <div class="q-pt-lg">
+            <div>
               <p>
                 Telephone: <br />
-                234 805 518 0613
+                <span style="font-size: 15px; color: #c19f62"
+                  >+234 805 518 0613</span
+                >
               </p>
             </div>
 
-            <div class="q-pt-lg">
+            <div>
               <p>
                 E-mail: <br />
                 <a
                   href="mailto:enquires@goldgradedevelopment.com"
-                  style="text-decoration: none; color: white"
+                  style="text-decoration: none; font-size: 15px; color: #c19f62"
                 >
                   enquires@goldgradedevelopment.com
                 </a>
@@ -111,12 +113,18 @@ const year = d.getFullYear();
   cursor: pointer;
 }
 
-.cc {
+/* .cc {
   position: absolute;
   bottom: 0;
   padding: 4rem;
   padding-left: 0;
   width: 60%;
+  border-top: 1px solid #c19f62;
+} */
+
+.cc {
+  padding: 1rem;
+  padding-left: 0;
   border-top: 1px solid #c19f62;
 }
 
@@ -136,5 +144,27 @@ input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1; /* Firefox */
+}
+
+@media only screen and (max-width: 1024px) {
+  .icon {
+    border-bottom: 1px #c19f62 solid;
+    border-right: 0px;
+  }
+
+  .footer-left {
+    padding: 1rem 2rem;
+  }
+
+  .links {
+    margin-bottom: 4rem;
+  }
+
+  .link {
+    margin: 0.5rem 0;
+  }
+
+  .footer-text {
+  }
 }
 </style>
